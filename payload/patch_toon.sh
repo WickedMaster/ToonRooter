@@ -38,7 +38,7 @@ sed -i 's~ovpn:235~#ovpn:235~g' /etc/inittab
 set +e
 
 echo ">>> Installing dropbear"
-opkg install dropbear_2015.71-r0_qb2.ipk
+opkg install dropbear_2026.94-r0_qb2.ipk
 if [[ $? == 255 ]] ; then
   set -e
   sh /usr/lib/opkg/info/dropbear.postinst
